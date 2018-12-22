@@ -14,11 +14,29 @@ echo json_encode($usuarios); */
 ////////////////////////////////////////////////////
 
 
+
+
+/*
+////////////////////////////////////////////////////
+//////////segunda aula
+
 $root = new Usuario();
 
-$root->loadbyId(4);
+$root->loadById(4);
 
 echo $root;
+//  fim segunda aula
+///////////////////////////////// */
+
+/// terceira aula exemplo 1///
+/*$lista = Usuario::getList();
+
+echo json_encode($lista);*/
+//// fim terceira aula exemplo 1
+
+$search = Usuario::search(" jo");
+
+echo json_encode($search);
 
 
 
